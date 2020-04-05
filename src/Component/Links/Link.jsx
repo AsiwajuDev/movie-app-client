@@ -24,7 +24,7 @@ class Links extends Component {
   render() {
     return (
       <React.Fragment>
-        <Link to="/" className="navbar-brand">
+        <Link to="/movies/list" className="navbar-brand">
           Movie App
         </Link>
         <Collapse>
