@@ -4,15 +4,21 @@ import styled from "styled-components";
 
 const Collapse = styled.div.attrs({
   className: "collpase navbar-collapse",
-})``;
+})`
+  flex-basis: auto;
+`;
 
 const List = styled.div.attrs({
-  className: "navbar-nav mr-auto",
-})``;
+  className: "navbar-nav ml-3",
+})`
+  flex-direction: unset;
+`;
 
 const Item = styled.div.attrs({
   className: "collpase navbar-collapse",
-})``;
+})`
+  flex-basis: unset;
+`;
 
 class Links extends Component {
   render() {
@@ -24,12 +30,12 @@ class Links extends Component {
         <Collapse>
           <List>
             <Item>
-              <Link to="/" className="nav-link">
+              <Link to="/movies" className="nav-link">
                 Movies
               </Link>
             </Item>
             <Item>
-              <Link to="/create" className="nav-link">
+              <Link to="/movies/create" className="nav-link">
                 Create Movie
               </Link>
             </Item>
